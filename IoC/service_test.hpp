@@ -12,5 +12,5 @@ public:
 class ServiceTestImpl : public ServiceTestInterface {
 public:
     virtual ~ServiceTestImpl() = default;
-    virtual int calculate(int a, int b) { return 0; };
+    virtual int calculate(int a, int b) { return a + b; };
 };

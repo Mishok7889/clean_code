@@ -4,7 +4,7 @@
 
 
 
-// Test to ensure AnotherServiceInterface can be registered and resolved
+// Test to ensure ServiceTestInterface can be registered and resolved
 TEST(IoCContainerTest, RegisterAndResolveServiceTest) {
     IoCContainer container;
     container.registerType<ServiceTestInterface, ServiceTestImpl>();
@@ -14,7 +14,7 @@ TEST(IoCContainerTest, RegisterAndResolveServiceTest) {
     ASSERT_EQ(service->calculate(2, 3), 5);
 }
 
-// Test to ensure different instances are created for AnotherServiceInterface
+// Test to ensure different instances are created for ServiceTestInterface
 TEST(IoCContainerTest, ResolveServiceTestDifferentInstances) {
     IoCContainer container;
     container.registerType<ServiceTestInterface, ServiceTestImpl>();
