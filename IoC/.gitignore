@@ -1,5 +1,5 @@
 .vs
-IoC
-x64
-*.filters
-*.user
+/**/x64
+/**/*.filters
+/**/*.user
+packages
